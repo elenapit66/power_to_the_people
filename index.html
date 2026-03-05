@@ -282,7 +282,17 @@ figcaption {
     font-weight: normal;      /* Stellt sicher, dass die Schrift nicht fett ist */
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Moderne, gut lesbare Schrift */
     opacity: 0.95;            /* Macht die Farbe noch eine Spur sanfter/transparenter */
-}</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Start" tags="" position="1400,725" size="100,100">[JavaScript]
+}
+
+/* --- Styling für die aufklappbaren Drop-Down-Abteile (Akkordeon) --- */
+details {
+    background-color: #262422 !important; /* Ein weiches Dunkelgrau für den Hintergrund der Box */
+    color: #e8e6e1 !important; /* Hellgrau/Weiß für den Text in der Box */
+    padding: 15px;
+    border-radius: 6px;
+    margin-top: 25px;
+    border-left: 4px solid #d9a05b; /* Ockergelber Rand links */
+    box-shadow: inset 0 0 10px rgba(0,0,0,0.3);</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Start" tags="" position="1400,725" size="100,100">[JavaScript]
 engine.state.set(&quot;mobilisierung&quot;, 0);
 engine.state.set(&quot;solidaritaet&quot;, 0);
 engine.state.set(&quot;aufmerksamkeit&quot;, 0);
@@ -307,12 +317,12 @@ Deine Entscheidungen beeinflussen Mobilisierung, Solidarität und politische Wir
 &lt;p&gt;&lt;b&gt;Wallersteins antisystemischer Ansatz:&lt;/b&gt; Immanuel Wallerstein argumentiert, dass echte Gleichheit und Freiheit im bestehenden kapitalistischen System unmöglich sind. Antisystemische Bewegungen wollen das System daher nicht reparieren, sondern es proaktiv durch radikale Selbstorganisation und neue Formen der Demokratie ersetzen.&lt;/p&gt;
 &lt;/details&gt;
 
-[[Spiel starten -&gt;Auswahl]]</tw-passagedata><tw-passagedata pid="2" name="Auswahl" tags="" position="1400,850" size="100,100">Wir befindest uns in einer Welt in der die Reichen durch leistungsloses Einkommen immer reicher werden. Gleichzeitig haben die arbeitenden Menschen immer weniger.
+[[Spiel starten -&gt;Auswahl]]</tw-passagedata><tw-passagedata pid="2" name="Auswahl" tags="" position="1400,850" size="100,100">Wir befinden uns in einer Welt in der die Reichen durch leistungsloses Einkommen immer reicher werden. Gleichzeitig haben die arbeitenden Menschen immer weniger.
 Regierungen reagieren auf ökonomische Krisen mit Sparpolitik, zu Lasten der Bevölkerung und schonen die Millionäre und Milliardäre. 
 Es ist Zeit für dich aktiv zu werden!
 
 &quot;Ungehorsam ist die wahre Grundlage der Freiheit, die Gehorsamen sind Sklaven.&quot; 
-H. David Thoreou 
+(H. David Thoreou) 
 
 
 Dieses Spiel basiert auf realen sozialen Bewegungen. Wähle eine dieser Hintergründe aus. 
@@ -333,6 +343,7 @@ mobilisierung: 0
 solidaritaet: 0
 aufmerksamkeit: 0
 theorie: []</tw-passagedata><tw-passagedata pid="4" name="Spanien – Indignados 2011" tags="" position="1275,975" size="100,100">Du befindest dich im Spanien des Jahres 2011. 
+
 Die Jugendarbeitslosigkeit ist explodiert, und die Politik hat den Forderungen nach Deregulierung nachgegeben. Viele machen die Kompromisse der alten Eliten für die Krise verantwortlich. 
 
 Am 15. Mai 2011 geht eine massive Welle der Entrüstung durch das Land.
@@ -516,7 +527,7 @@ engine.state.set(&quot;theorie&quot;, neu);
 engine.state.set(&quot;theorieText&quot;, neu.join(&quot;, &quot;));
 [continued]
 
-Der Streik zeigt die ökonomische Macht der Arbeiter, doch das Verhältnis zu den radikaleren Jugendbewegungen bleibt angespannt [8]. Die Regierung verweigert tiefgreifende Reformen.
+Der Streik zeigt die ökonomische Macht der Arbeiter, doch das Verhältnis zu den radikaleren Jugendbewegungen bleibt angespannt. Die Regierung verweigert tiefgreifende Reformen.
 [[Wie geht die Bewegung weiter? -&gt; Spanien_Runde2]]</tw-passagedata><tw-passagedata pid="15" name=" Spanien_Runde2" tags="" position="1000,1250" size="100,100">**RUNDE 2: Die institutionelle Wende**
 
 Die erste Welle der Empörung ist vorbei, doch die Austeritätspolitik geht weiter. Die Bewegung muss sich entscheiden, wie sie die gewonnene Energie in langfristigen Wandel übersetzen kann. 
@@ -539,7 +550,7 @@ engine.state.set(&quot;theorie&quot;, neu);
 engine.state.set(&quot;theorieText&quot;, neu.join(&quot;, &quot;));
 [continued]
 
-Hier verbinden sich die klassischen Gewerkschaftskämpfe zum Erhalt des Wohlfahrtsstaates mit den neuen, partizipativen Methoden der jungen Generation [10]. 
+Hier verbinden sich die klassischen Gewerkschaftskämpfe zum Erhalt des Wohlfahrtsstaates mit den neuen, partizipativen Methoden der jungen Generation. 
 
 [[Zum Ergebnis-&gt;Endscreen_SP]]</tw-passagedata><tw-passagedata pid="17" name="SP_R2_B" tags="" position="725,1250" size="100,100">**Der Weg in die Parlamente**
 Aus den lokalen Versammlungen heraus gründet ihr *Podemos*, eine neue soziale Bewegungspartei. Ihr wollt das degenerierte politische System von innen heraus transformieren.
@@ -553,7 +564,7 @@ engine.state.set(&quot;theorie&quot;, neu);
 engine.state.set(&quot;theorieText&quot;, neu.join(&quot;, &quot;));
 [continued]
 
-Das bringt die Forderungen der Straße direkt ins Parlament und bricht die alte Parteiendominanz auf [10, 11]. Allerdings birgt dies die Gefahr, dass die Basisbewegung durch den parlamentarischen Alltag kompromittiert wird [12].
+Das bringt die Forderungen der Straße direkt ins Parlament und bricht die alte Parteiendominanz auf. Allerdings birgt dies die Gefahr, dass die Basisbewegung durch den parlamentarischen Alltag kompromittiert wird.
 
 [[Zum Ergebnis-&gt;Endscreen_SP]]</tw-passagedata><tw-passagedata pid="18" name="GR_R1_A" tags="" position="1225,1450" size="100,100">**Die Macht der Generalstreiks**
 
@@ -604,7 +615,7 @@ engine.state.set(&quot;theorie&quot;, neu);
 engine.state.set(&quot;theorieText&quot;, neu.join(&quot;, &quot;));
 [continued]
 
-Ihr bekommt enorme internationale Aufmerksamkeit [19]. Doch die Gewalt schreckt gemäßigtere Teile der Bevölkerung ab und erschwert den Aufbau nachhaltiger gesellschaftlicher Allianzen. 
+Ihr bekommt enorme internationale Aufmerksamkeit. Doch die Gewalt schreckt gemäßigtere Teile der Bevölkerung ab und erschwert den Aufbau nachhaltiger gesellschaftlicher Allianzen. 
 
 [[Zum Ergebnis → Endscreen_GR]]</tw-passagedata><tw-passagedata pid="22" name="GR_R2_B" tags="" position="1500,1675" size="100,100">**Selbstorganisation und Solidarität**
 Anstatt nur auf den Staat zu warten, ergreift ihr direkte Aktionen. Fabriken werden besetzt und in Selbstverwaltung überführt. Im ganzen Land entstehen lokale Versammlungen und Basisinitiativen, die Essen und Medizin verteilen. 
@@ -618,7 +629,7 @@ engine.state.set(&quot;theorie&quot;, neu);
 engine.state.set(&quot;theorieText&quot;, neu.join(&quot;, &quot;));
 [continued]
 
-Euer Protest wird zutiefst antisystemisch: Er will die Demokratie auf radikale Weise von unten neu aufbauen [18]. Diese Mobilisierung bereitet letztlich den Weg für den politischen Aufstieg der Linken (Syriza) [20].
+Euer Protest wird zutiefst antisystemisch: Er will die Demokratie auf radikale Weise von unten neu aufbauen. Diese Mobilisierung bereitet letztlich den Weg für den politischen Aufstieg der Linken (Syriza).
 
 [[Zum Ergebnis → Endscreen_GR]]</tw-passagedata><tw-passagedata pid="23" name="Zum Ergebnis → Endscreen_GR" tags="" position="1275,1825" size="100,100">### Ende – Griechenland
 Für heute kommst du erstmal so weit...
@@ -653,8 +664,11 @@ engine.state.set(&quot;einordnungText&quot;, einordnung);
 {einordnungText}
 
 Mobilisierung: {mobilisierung}
+
 Solidarität: {solidaritaet}
+
 Öffentliche Aufmerksamkeit: {aufmerksamkeit}
+
 Theorien: {theorieText}
 
 &lt;img src=&quot;https://cdn.prod.www.spiegel.de/images/b9575aea-0001-0004-0000-000000867409_w1528_r1.7917355371900827_fpx46.87_fpy50.jpg&quot;&gt;
@@ -667,13 +681,13 @@ Theorien: {theorieText}
 &lt;details&gt;
 &lt;summary&gt;&lt;b&gt;Was ist historisch in Griechenland passiert?&lt;/b&gt;&lt;/summary&gt;
 &lt;p&gt;
-Griechenland wurde von der Finanzkrise und der von der &quot;Troika&quot; (EU, EZB, IWF) diktierten Sparpolitik besonders hart getroffen [10]. Löhne und Renten wurden dramatisch gekürzt, ein Viertel der Belegschaft wurde arbeitslos und das traditionelle Tarifvertragssystem wurde zerschlagen [10]. 
+Griechenland wurde von der Finanzkrise und der von der &quot;Troika&quot; (EU, EZB, IWF) diktierten Sparpolitik besonders hart getroffen. Löhne und Renten wurden dramatisch gekürzt, ein Viertel der Belegschaft wurde arbeitslos und das traditionelle Tarifvertragssystem wurde zerschlagen. 
 &lt;/p&gt;
 &lt;p&gt;
-Als Reaktion darauf erlebte das Land eine historisch beispiellose Protestwelle. Einerseits agierten die großen Gewerkschaften (wie GSEE und ADEDY) als organisatorischer Motor der Bewegung und riefen allein zwischen 2010 und 2013 zu unfassbaren 17 Generalstreiks auf [10, 11]. Andererseits radikalisierte sich die Zivilgesellschaft: Bis zu ein Drittel der Bevölkerung beteiligte sich an klassenübergreifenden Protesten und besetzte zentrale Orte wie den Syntagma-Platz in Athen [12]. 
+Als Reaktion darauf erlebte das Land eine historisch beispiellose Protestwelle. Einerseits agierten die großen Gewerkschaften (wie GSEE und ADEDY) als organisatorischer Motor der Bewegung und riefen allein zwischen 2010 und 2013 zu unfassbaren 17 Generalstreiks auf. Andererseits radikalisierte sich die Zivilgesellschaft: Bis zu ein Drittel der Bevölkerung beteiligte sich an klassenübergreifenden Protesten und besetzte zentrale Orte wie den Syntagma-Platz in Athen. 
 &lt;/p&gt;
 &lt;p&gt;
-Weil die Krise den Alltag extrem beeinträchtigte, wuchs der Hass auf die &quot;unmoralischen&quot; politischen Eliten, denen man Verrat vorwarf [13, 14]. Die Bürger*innen bauten eine enorme Gegenmacht durch direkte Aktionen auf: Es entstanden zahllose lokale Basisversammlungen, solidarische Gesundheitszentren und Fabriken wurden besetzt und in Selbstverwaltung überführt [15, 16]. Diese massive, teils stark antisystemische Mobilisierung auf der Straße mündete schließlich 2015 in einem politischen Erdbeben und dem Wahlsieg der radikalen Linkspartei &lt;i&gt;Syriza&lt;/i&gt; [16].
+Weil die Krise den Alltag extrem beeinträchtigte, wuchs der Hass auf die &quot;unmoralischen&quot; politischen Eliten, denen man Verrat vorwarf. Die Bürger*innen bauten eine enorme Gegenmacht durch direkte Aktionen auf: Es entstanden zahllose lokale Basisversammlungen, solidarische Gesundheitszentren und Fabriken wurden besetzt und in Selbstverwaltung überführt. Diese massive, teils stark antisystemische Mobilisierung auf der Straße mündete schließlich 2015 in einem politischen Erdbeben und dem Wahlsieg der radikalen Linkspartei &lt;i&gt;Syriza&lt;/i&gt;.
 &lt;/p&gt;
 &lt;/details&gt;
 
@@ -714,8 +728,11 @@ engine.state.set(&quot;einordnungText&quot;, einordnung);
 {einordnungText}
 
 Mobilisierung: {mobilisierung}
+
 Solidarität: {solidaritaet}
+
 Öffentliche Aufmerksamkeit: {aufmerksamkeit}
+
 Theorien: {theorieText}
 
 &lt;img src=&quot;https://e00-elmundo.uecdn.es/elmundo/imagenes/2012/04/22/madrid/1335113686_0.jpg&quot;&gt;
@@ -728,13 +745,13 @@ Theorien: {theorieText}
 &lt;details&gt;
 &lt;summary&gt;&lt;b&gt;Was ist historisch in Spanien passiert?&lt;/b&gt;&lt;/summary&gt;
 &lt;p&gt;
-Am 15. Mai 2011 löste die Empörung über explodierende Jugendarbeitslosigkeit und die Sparpolitik der Regierung die massive &quot;15M&quot;-Bewegung (auch Indignados genannt) aus [4, 5]. Die Protestierenden machten die Kompromisse der alten politischen Eliten aus der Zeit des Übergangs zur Demokratie für die Krise verantwortlich und warfen dem System Degeneration vor [6, 7]. 
+Am 15. Mai 2011 löste die Empörung über explodierende Jugendarbeitslosigkeit und die Sparpolitik der Regierung die massive &quot;15M&quot;-Bewegung (auch Indignados genannt) aus. Die Protestierenden machten die Kompromisse der alten politischen Eliten aus der Zeit des Übergangs zur Demokratie für die Krise verantwortlich und warfen dem System Degeneration vor. 
 &lt;/p&gt;
 &lt;p&gt;
-Die Bewegung zeichnete sich durch neue, horizontale Organisationsformen aus: Menschen besetzten in &quot;Acampadas&quot; zentrale Plätze (wie die Puerta del Sol in Madrid) und organisierten sich in inklusiven Basisversammlungen (Asambleas) [5, 6]. Die traditionellen Gewerkschaften (UGT und CCOO) mobilisierten parallel dazu Millionen Menschen zu Generalstreiks, allerdings blieb das Verhältnis zwischen den klassischen Institutionen und den neuen Jugendbewegungen auf den Plätzen angespannt [8]. Auch alte Protestformen wie &quot;Charivaris&quot; (öffentliche Beschämungsrituale gegen Politiker) lebten wieder auf [5].
+Die Bewegung zeichnete sich durch neue, horizontale Organisationsformen aus: Menschen besetzten in &quot;Acampadas&quot; zentrale Plätze (wie die Puerta del Sol in Madrid) und organisierten sich in inklusiven Basisversammlungen (Asambleas). Die traditionellen Gewerkschaften (UGT und CCOO) mobilisierten parallel dazu Millionen Menschen zu Generalstreiks, allerdings blieb das Verhältnis zwischen den klassischen Institutionen und den neuen Jugendbewegungen auf den Plätzen angespannt [8]. Auch alte Protestformen wie &quot;Charivaris&quot; (öffentliche Beschämungsrituale gegen Politiker) lebten wieder auf.
 &lt;/p&gt;
 &lt;p&gt;
-Als sich die Plätze leerten, floss die Protestenergie in den öffentlichen Sektor: Es entstanden die sogenannten &quot;Mareas&quot; (Wellen), in denen z.B. Lehrer*innen und Gesundheitspersonal den Kampf um den Wohlfahrtsstaat mit den partizipativen Werten der Platzbesetzungen verbanden [9]. Letztlich veränderte die Bewegung das spanische Parteiensystem nachhaltig und führte zur Gründung der neuen Bewegungspartei &lt;i&gt;Podemos&lt;/i&gt; [9].
+Als sich die Plätze leerten, floss die Protestenergie in den öffentlichen Sektor: Es entstanden die sogenannten &quot;Mareas&quot; (Wellen), in denen z.B. Lehrer*innen und Gesundheitspersonal den Kampf um den Wohlfahrtsstaat mit den partizipativen Werten der Platzbesetzungen verbanden. Letztlich veränderte die Bewegung das spanische Parteiensystem nachhaltig und führte zur Gründung der neuen Bewegungspartei &lt;i&gt;Podemos&lt;/i&gt;.
 &lt;/p&gt;
 &lt;/details&gt;
 
@@ -769,7 +786,7 @@ engine.state.set(&quot;theorie&quot;, neu);
 engine.state.set(&quot;theorieText&quot;, neu.join(&quot;, &quot;));
 [continued]
 
-Der Vertrauensverlust in die traditionellen Parteien ist total, was den moralischen Kern einer Polanyi-Gegenbewegung zeigt [6]. Doch die Troika zwingt die geschwächte Regierung unerbittlich zu weiteren Kürzungen.
+Der Vertrauensverlust in die traditionellen Parteien ist total, was den moralischen Kern einer Polanyi-Gegenbewegung zeigt. Doch die Troika zwingt die geschwächte Regierung unerbittlich zu weiteren Kürzungen.
 
 [[Wie reagiert die Zivilgesellschaft? -&gt; Griechenland_Runde2]]</tw-passagedata><tw-passagedata pid="27" name="SP_R2_C" tags="" position="950,1050" size="100,100">**Lokale Selbstverwaltung und Kollektive**
 
@@ -784,7 +801,7 @@ engine.state.set(&quot;theorie&quot;, neu);
 engine.state.set(&quot;theorieText&quot;, neu.join(&quot;, &quot;));
 [continued]
 
-Das ist ein stark antisystemischer Ansatz (nach Wallerstein), da ihr versucht, die Gesellschaft von unten und jenseits der staatlichen Institutionen neu zu organisieren. Die auf den Plätzen gelernten Werte wie Gleichheit, Inklusivität und Dialog werden so direkt im Alltag verankert [1].
+Das ist ein stark antisystemischer Ansatz (nach Wallerstein), da ihr versucht, die Gesellschaft von unten und jenseits der staatlichen Institutionen neu zu organisieren. Die auf den Plätzen gelernten Werte wie Gleichheit, Inklusivität und Dialog werden so direkt im Alltag verankert.
 
 [[Zum Ergebnis -&gt;Endscreen_SP]]</tw-passagedata><tw-passagedata pid="28" name="GR_R2_C" tags="" position="1550,1825" size="100,100">**Der Weg durch die Institutionen (Syriza)**
 Die Proteste wirken sich zunehmend auf die politische Arena aus. Anstatt nur auf der Straße zu bleiben, entscheidet ihr euch, die Energie der Bewegung in die Parlamente zu tragen und stärkt bei den Wahlen massiv die radikale Linke.
@@ -798,7 +815,7 @@ engine.state.set(&quot;theorie&quot;, neu);
 engine.state.set(&quot;theorieText&quot;, neu.join(&quot;, &quot;));
 [continued]
 
-Eure Mobilisierung verändert das Parteiensystem massiv und gipfelt schließlich 2015 in der Regierungsübernahme durch die neue Bewegungspartei Syriza [2]. Damit verbindet ihr die radikale Energie mit dem Versuch, als Gegenbewegung (Polanyi) staatliche Macht zurückzugewinnen, um die Austeritätspolitik von oben zu beenden.
+Eure Mobilisierung verändert das Parteiensystem massiv und gipfelt schließlich 2015 in der Regierungsübernahme durch die neue Bewegungspartei Syriza. Damit verbindet ihr die radikale Energie mit dem Versuch, als Gegenbewegung (Polanyi) staatliche Macht zurückzugewinnen, um die Austeritätspolitik von oben zu beenden.
 
 [[Zum Ergebnis → Endscreen_GR]]</tw-passagedata><tw-passagedata pid="29" name="CL_A_3" tags="" position="2100,1350" size="100,100">Ihr setzt auf internationale Öffentlichkeit.
 Menschenrechtsorganisationen berichten, internationale Medien greifen die Ereignisse auf.
@@ -983,8 +1000,11 @@ engine.state.set(&quot;einordnungText&quot;, einordnung);
 {einordnungText}
 
 Mobilisierung: {mobilisierung}  
+
 Solidarität: {solidaritaet}  
+
 Öffentliche Aufmerksamkeit: {aufmerksamkeit}  
+
 Theorien: {theorieText}
 
 
@@ -1192,8 +1212,11 @@ engine.state.set(&quot;einordnungText&quot;, einordnung);
 {einordnungText}
 
 Mobilisierung: {mobilisierung}
+
 Solidarität: {solidaritaet}
+
 Öffentliche Aufmerksamkeit: {aufmerksamkeit}
+
 Theorien: {theorieText}
 
 &lt;img src=&quot;https://c.nau.ch/i/3a4Lv/1360/680/indien-bauern-autobahn.jpg&quot;&gt;
@@ -1346,8 +1369,11 @@ engine.state.set(&quot;einordnungText&quot;, einordnung);
 {einordnungText}
 
 Mobilisierung: {mobilisierung}
+
 Solidarität: {solidaritaet}
+
 Öffentliche Aufmerksamkeit: {aufmerksamkeit}
+
 Theorien: {theorieText}
 
 &lt;img src=&quot;https://images.squarespace-cdn.com/content/v1/5e49ea5f94c2c44a94262103/1585616535789-NC9N0CAV9E47SWDBTWC9/Polici%CC%81as+y+marchistas+enfrentados.jpg&quot;&gt;
